@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sorry Annu 💌</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #ffe6e6, #ffcccc);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      flex-direction: column;
+    }
+    h1 {
+      color: #d6336c;
+      font-size: 3rem;
+      animation: pulse 2s infinite;
+    }
+    p {
+      color: #333;
+      max-width: 90%;
+      text-align: center;
+      font-size: 1.2rem;
+      margin: 1rem 0;
+    }
+    button {
+      background-color: #ff4d6d;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .popup {
+      display: none;
+      margin-top: 2rem;
+      background-color: #fff0f5;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 105, 135, 0.4);
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Sorry Annu 💌</h1>
+  <p>Raat wali baat ke liye dil se maafi chahta hoon. Tumhari khushi mere liye sab kuchh hai. Tumse gussa hua tha, par tumhare bina sab adhoora lagta hai. Mujhe maaf kar do na please. – Tumhara Durgesh</p>
+  <button onclick="showPopup()">Annu, agar tum mujhe maaf karti ho to yahaan click karo 💗</button>
+  <div id="popup" class="popup">
+    <h2>Thank you, Annu! 💖</h2>
+    <p>Tumhara maaf karna mere liye sabse badi khushi hai. Tum meri duniya ho!</p>
+  </div>
+  <script>
+    function showPopup() {
+      document.getElementById('popup').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
